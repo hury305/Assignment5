@@ -1,0 +1,308 @@
+body {
+    background-color: #c1f0ec;
+}
+#background {
+    position: absolute;
+    top: -175px;
+}
+.container {
+    position: relative;
+    left: calc(50% - 300px);
+    top: 400px;
+    width: 700px;
+    height: 200px;
+    border: 1px solid transparent;
+}
+#r {
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    animation-name: TopR;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.r-semi {
+    position: absolute;
+    background-color: #c1f0ec;
+    width: 100px;
+    height: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 20px solid #f16abf;
+    border-left: 0;
+    box-sizing: border-box;
+}
+.r-left {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    border-left: 20px solid #f16abf;
+    box-sizing: border-box;
+}
+#r-diag {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0;
+    border-right: 120px solid transparent;
+    border-bottom: 200px solid #f16abf;
+}
+.rd {
+    animation-name: rd;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes rd {
+    from {
+        border-right: 120px solid transparent;
+        border-bottom: 200px solid #f16abf;
+    }
+    to {
+        border-right: 240px solid transparent;
+        border-bottom: 400px solid #f16abf;
+    }
+}
+#r-neg {
+    position: absolute;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-left: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 180px solid #c1f0ec;
+}
+.rn {
+    animation-name: rn;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes rn {
+    from {
+        border-right: 100px solid transparent;
+        border-bottom: 180px solid #c1f0ec;
+    }
+    to {
+        border-right: 200px solid transparent;
+        border-bottom: 400px solid #c1f0ec;
+    }
+}
+#i {
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    left: 200px;
+}
+.i {
+    width: 20px;
+    height: 200px;
+    background-color: #f16abf;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    box-shadow: 10px 10px #cb4dfc;
+    animation-timing-function: linear;
+}
+.i:hover {
+    box-shadow: 10px 10px black;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.MoveI {
+    animation-name: MoveI;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes MoveI {
+    from {
+        top: 0px;
+        left: 200px;
+    }
+    to {
+        top: -300px;
+        left: 200px;
+    }
+}
+#d {
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    left: 300px;
+}
+#d-semi {
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 20px dotted #f16abf;
+    border-left: 0;
+    box-sizing: border-box;
+    animation-name: colorD;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+#d-left {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    border-left: 20px dotted #f16abf;
+    box-sizing: border-box;
+    animation-name: colorDl;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+#e {
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    left: 500px;
+}
+#e-one {
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    border-top: 20px solid #f16abf;
+    border-bottom: 20px solid #f16abf;
+    border-left: 20px solid #f16abf;
+    box-sizing: border-box;
+}
+#e-two {
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    border-bottom: 20px solid #f16abf;
+    box-sizing: border-box;
+}
+.extend {
+    animation-name: extend;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes extend {
+    from {
+        width: 120px;
+    }
+    to {
+        width: 600px;
+    }
+}
+.moveE {
+    animation-name: moveE;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes moveE {
+    from {
+        left: 500px;
+    }
+    to {
+        left: 1100px;
+    }
+}
+.cloud {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100px;
+    display: inline-block;
+}
+.nocloud {
+    width: 100px;
+    height: 50px;
+    background-color: #c1f0ec;
+    border-radius: 100px;
+    display: inline-block;
+}
+@media only screen and (max-width: 700px) {
+    #background {
+        position: absolute;
+        top: -175px;
+    }
+    .container {
+        left: calc(50% - 250px);
+        top: 450px;
+    }
+    #d {
+        left: 150px;
+    }
+    #d-semi {
+        width: 55px;
+        height: 100px;
+        border: 10px dotted #f16abf;
+    }
+    #d-left {
+        width: 50px;
+        height: 100px;
+        border-left: 10px dotted #f16abf;
+    }
+    .r-semi {
+        width: 50px;
+        height: 50px;
+        border: 10px solid #f16abf;
+    }
+    .r-left {
+        width: 50px;
+        height: 100px;
+        border-left: 10px solid #f16abf;
+    }
+    #r-diag {
+        border-right: 55px solid transparent;
+        border-bottom: 100px solid #f16abf;
+    }
+    #r-neg {
+        border-right: 50px solid transparent;
+        border-bottom: 90px solid #c1f0ec;
+    }
+    #i {
+        left: 100px;
+    }
+    .i {
+        height: 100px;
+        width: 10px;
+    }
+    #e {
+        left: 250px;
+    }
+    #e-one {
+        width: 50px;
+        height: 100px;
+        border: 10px solid #f16abf;
+        border-right: none;
+    }
+    #e-two {
+        width: 50px;
+        height: 50px;
+        border: 10px solid #f16abf;
+        border-right: none;
+    }
+    @keyframes MoveI {
+        from {
+            top: 0px;
+            left: 100px;
+        }
+        to {
+            top: -300px;
+            left: 100px;
+        }
+    }
+}
